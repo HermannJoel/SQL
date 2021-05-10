@@ -1,2 +1,2 @@
 # SQL-for-data-Analysis
-SQL queries for data analysis 
+This repository is to showcose my SQL skills
