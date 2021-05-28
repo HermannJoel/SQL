@@ -1,2 +1,5 @@
 # SQL-for-data-Analysis
-This repository is to showcose my SQL skills
+
+This repository is to showcase my SQL skills
+
+---
