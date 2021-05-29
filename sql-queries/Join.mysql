@@ -8,7 +8,7 @@ SELECT
 	c.title,
 	c.from_date AS "Promoted on"
 FROM employees AS a
-INNER JOIN salaries AS b ON a.emp_no = b.emp_no ----joining emplyees to salaries
+INNER JOIN salaries AS b ON a.emp_no = b.emp_no ---joining emplyees to salaries
 INNER JOIN titles AS c 
 ON c.emp_no = a.emp_no
 	AND (c.from_date = (b.from_date + INTERVAL '2 days') OR 
@@ -22,7 +22,7 @@ FROM OWNER AS b
 RIGHT JOIN pets AS ALL
 ON a."OwnerID" = b."OwnerID"
 ORDER BY "pet_name";
----Left Join--
+---Left Join---
 
 SELECT a."Name", a."Kind", b."Name"
 FROM pets AS a
@@ -30,7 +30,7 @@ LEFT JOIN owners AS b
 ON a."OwnerID" = b."OwnerID"
 WHERE LEFT(a."Name", 1) = LEFT(b."Name", 1)
 ORDER BY a."Kind";
----Tip. Aliases for columns--
+---Tip. Aliases for columns---
 SELECT a."Name" AS "pet_name", a."Kind", b."Name" AS "owner_name"
 FROM pets AS a
 LEFT JOIN owners AS b
