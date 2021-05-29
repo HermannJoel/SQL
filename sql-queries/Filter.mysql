@@ -1,25 +1,27 @@
------AND/OR----
+---AND/OR---
 SELECT * FROM public.customers
 SELECT firstname, lastname FROM public.customers WHERE gender = 'F' AND state = 'OR' OR gender = 'F' AND state = 'NY'
 SELECT firstname, lastname FROM public.customers WHERE (state = 'OR' OR state = 'NY') AND gender = 'F'
 SELECT COUNT(customerid) FROM public.customers WHERE gender = 'F' AND state = 'OR' OR gender = 'F' AND state = 'NY'
-----NOT-------
+---NOT---
 SELECT firstname, lastname, age FROM public.customers
 SELECT COUNT(customerid) FROM public.customers WHERE NOT age = 55 AND NOT age = 54;
-------COMPARAISON------
+
+---COMPARAISON---
 SELECT customerid, income, age FROM public.customers WHERE age > 44 AND income = 100000
 SELECT COUNT(customerid) FROM public.customers WHERE age > 44 AND income = 100000
 
---4.All rows with word Credit
+---4.All rows with word Credit---
 SELECT *
 FROM consumer_complaints 
 WHERE UPPER(product_name) LIKE '%CREDIT%';
---5.All rows with word late in the issue field
+
+--5.All rows with word late in the issue field---
 SELECT *
 FROM consumer_complaints 
 WHERE UPPER("Issue") LIKE 'LATE%';
 
---LIKE
+---LIKE---
 SELECT *
 FROM consumer_complaints 
 WHERE LOWER("product_name") LIKE 'credit _________';
@@ -37,7 +39,6 @@ FROM consumer_complaints
 WHERE LOWER("Zip Code") LIKE '6__1';--Only zip code with 4 character and that start with 6 and end with 1
 
 ---
-
 
 SELECT "Company", "Issue"
 FROM consumer_complaints

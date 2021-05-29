@@ -1,6 +1,6 @@
----groupby
+---groupby---
 
----1.For each product_id transaction nber and Total sales
+---1.For each product_id transaction nber and Total sales---
 SELECT product_id,
        count(sales_id) AS "nber_transactions",
        ROUND(SUM(sale_amount)) AS "Total"        

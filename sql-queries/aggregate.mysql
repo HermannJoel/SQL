@@ -1,4 +1,4 @@
-------Aggregate functions-------- AVG(), COUNT, MIN(), MAX(), SUM()
+---Aggregate functions--- AVG(), COUNT, MIN(), MAX(), SUM()
 
 SELECT COUNT(emp_no) FROM "employees"
 SELECT * FROM public.salaries             
