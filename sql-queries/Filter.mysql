@@ -22,6 +22,14 @@ FROM consumer_complaints
 WHERE UPPER("Issue") LIKE 'LATE%';
 
 ---LIKE---
+/*
+LIKE '%X'= Filed that end with X
+LIKE '%X%'= Field that have X anywhere in the value
+LIKE '_XY%'=Field that have X and Y as 2nd and 3rd character and anything after 
+LIKE '%88%'=Field that have 88 anywhere in the value
+LIKE 'X_%_%'=Finds any values that start with X and are at least 3 character in length
+LIKE '2__3'= Finds any values in a 5 digits number that start with 2 and end with 3
+*/
 SELECT *
 FROM consumer_complaints 
 WHERE LOWER("product_name") LIKE 'credit _________';
