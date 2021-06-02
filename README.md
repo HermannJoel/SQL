@@ -1,5 +1,11 @@
 # SQL-for-data-Analysis
 
-This repository is to showcase my SQL skills
+    This repository contain exapmes of SQL queries:
+
+    - Join
+
+    - Goupby
+
+    - Order by
 
 ---
