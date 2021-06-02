@@ -1,6 +1,6 @@
 # SQL-for-data-Analysis
 
-    This repository contain exapmes of SQL queries:
+    This repository contains SQL queries examples:
 
     - Join
 
